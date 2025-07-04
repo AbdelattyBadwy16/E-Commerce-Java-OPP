@@ -80,9 +80,10 @@ public class CheckoutServiceImpl implements CheckoutService {
         }
 
         System.out.println("----------------------");
-        System.out.println("Subtotal " + (int) subTotal);
-        System.out.println("Shipping " + (shippableItems.isEmpty() ? 0 :(int) fee));
-        System.out.println("Amount " + (int) total);
+        System.out.println("Subtotal " + subTotal);
+        System.out.println("Shipping fees " + (shippableItems.isEmpty() ? 0 : fee));
+        System.out.println("Amount " + total);
+        System.out.println("Customer Current Balance  " + customer.getBalance());
 
     }
 
